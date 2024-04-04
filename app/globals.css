@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
- 
+  ::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-
 }
 
 body {
