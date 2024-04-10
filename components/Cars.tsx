@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Cars = () => {
   const [selectedCar, setSelectedCar] = useState<any>();
+
   return (
     <>
       <div className="mt-3 ">
@@ -12,7 +13,9 @@ const Cars = () => {
           {carsList.map((item, index) => (
             <div
               key={index}
-              className={`m-2 p-2 border-[1px] rounded-md hover:border-yellow-500 cursor-pointer ${index == selectedCar ? 'border-yellow-500 border-[2px]' : null}`}
+              className={`m-2 p-2 border-[1px] rounded-md hover:border-yellow-500 cursor-pointer ${
+                index == selectedCar ? "border-yellow-500 border-[2px]" : null
+              }`}
               onClick={() => setSelectedCar(index)}
             >
               <Image
