@@ -6,9 +6,9 @@ const Cards = () => {
   const [activeIndex, setActiveIndex] = useState<any>();
   return (
     <>
-      <div>
+      <div className=" mt-10">
         <h2 className=" text-[14px] font-semibold">Payments Method</h2>
-        <div className=" grid grid-cols-5 mt-2 ">
+        <div className=" grid grid-cols-5 mt-5 ">
           {cardList.map((item, index) => (
             <div
               key={index}

@@ -22,6 +22,9 @@ const AutoCompleteAddress = () => {
     DestinationCordinatesContext
   );
 
+  // console.log("Source: ",sourceCordinates)
+  // console.log("Destination: ",destinationCordinates);
+
   const getAddressList = async () => {
     setAddressList([]);
     const query = sourceChange ? source : destination;
@@ -87,8 +90,8 @@ const AutoCompleteAddress = () => {
     });
   };
 
-  console.log("Soource: ", sourceCordinates);
-  console.log("destination: ", destinationCordinates);
+  // console.log("Soource: ", sourceCordinates);
+  // console.log("destination: ", destinationCordinates);
 
   return (
     <>
